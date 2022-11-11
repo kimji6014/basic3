@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{background-color:darkslategray;}
+        .멋쟁이{background-color:darkorange;
+                width:300px; height:300px;
+                background-image:url(img2.jpg);
+                background-size: cover;
+                transition: 0.3s;
+            }
+        /* .멋쟁이:hover는 .멋쟁이에 마우스를 올리면 */
+        .멋쟁이:hover{background-image:url(img3.jpg) ;}
+        .칠칠이{background-color:seagreen;}
+
+        .예술이{width:300px; height:300px;}
+        .예술이 img{width:100%}
+
+        .움직임의부모{background-color: blue;
+            width:300px; height:300px;
+            overflow: hidden;
+        }
+        .움직임의부모 .움직이는자{
+            background-color: aquamarine;
+            width:300px; height:300px;
+            position: relative; /* 움직이기위한 position */
+            left:300px;
+            transition: 0.3s;
+        }
+        .움직임의부모:hover .움직이는자{
+            left:0;
+        }
+        .움직임의부모2{background-color: rgb(247, 132, 230);
+            width:300px; height:300px;
+            overflow: hidden;
+        }
+        .움직임의부모2 .움직이는자2{
+            background-color: rgb(52, 104, 139);
+            width:300px; height:300px;
+            position: relative; 
+            top:300px;
+            transition: 0.3s;
+        }
+        .움직임의부모2:hover .움직이는자2{
+            top:0px;
+        }
+        .움직임의부모3{background-color: rgb(4, 54, 63);
+            width:300px; height:300px;
+            overflow: hidden;
+        }
+        .움직임의부모3 .움직이는자3{
+            background-color: rgb(213, 219, 28);
+            width:300px; height:300px;
+            position: relative; 
+            top:-300px;
+            transition: 0.3s;
+        }
+        .움직임의부모3:hover .움직이는자3{
+            top:0px;
+        }
+        .움직임의부모4{
+            background-color: rgb(86, 71, 141);
+            width:300px; height:300px;
+            overflow: hidden;
+        }
+        .움직임의부모4 .움직이는자4{
+            background-color: rgb(131, 78, 63);
+            width:300px; height:300px;
+            position: relative;
+            left:-300px;
+            transition: 0.3s;
+        }
+        .움직임의부모4:hover .움직이는자4{
+            left:0px;
+        }
+    </style>
+</head>
+<body>
+    <div class="멋쟁이">제목입니다.</div>
+    <div class="칠칠이">한줄복사 Alt + Shift + ↓</div>
+    <div class="예술이">
+        <img src="img2.jpg" alt="이미지">
+    </div>
+    <div class="움직임의부모">
+        <div class="움직이는자">촐싹이</div>
+    </div>
+    <div class="움직임의부모2">
+        <div class="움직이는자2">촐싹이2</div>
+    </div>
+    <div class="움직임의부모3">
+        <div class="움직이는자3">촐싹이3</div>
+    </div>
+    <div class="움직임의부모4">
+        <div class="움직이는자4">촐싹이4</div>
+    </div>
+</body>
+</html>
